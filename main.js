@@ -1,8 +1,6 @@
 const wordsTextarea = document.querySelector(".word-counter-container .words");
 const countBtn = document.querySelector(".word-counter-container .count-btn");
-const wordCount = document.querySelector(
-  ".word-counter-container .word-count span"
-);
+const wordCount = document.querySelector(".word-counter-container .word-count span");
 
 const countWords = () => {
   let words = wordsTextarea.value;
@@ -16,11 +14,6 @@ const countWords = () => {
     numberOfWords = 0;
   }
 
-  wordCount.innerHTML = numberOfWords;
-  let hasil = Math.ceil(numberOfWords / 100);
-  wordCount.innerHTML = hasil;
-
+  let percentage = (numberOfWords * 100) / 100; // mengalikan jumlah kata dengan 100 dan membaginya dengan 100
+  wordCount.innerHTML = percentage.toFixed(2) + "%"; // menampilkan persentase dengan 2 angka di belakang koma
 };
-
-
-countBtn.addEventListener("click", countWords);
