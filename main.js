@@ -18,8 +18,6 @@ const countWords = () => {
 
   wordCount.innerHTML = numberOfWords;
 
-  let hasil = Math.ceil(numberOfWords / 100);
-  wordCount.innerHTML = hasil;
 };
 
 
