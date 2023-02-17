@@ -14,6 +14,4 @@ const countWords = () => {
     numberOfWords = 0;
   }
 
-  let percentage = (numberOfWords * 100) / 100; // mengalikan jumlah kata dengan 100 dan membaginya dengan 100
-  wordCount.innerHTML = percentage.toFixed(2) + "%"; // menampilkan persentase dengan 2 angka di belakang koma
-};
+  };
